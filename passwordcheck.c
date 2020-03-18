@@ -29,7 +29,7 @@ renter:
 
 	{
 
-		printf("Error: Password should contain contain minimum 5 characters ");
+		printf("\nError: Password should contain contain minimum 5 characters ");
 
 	}
 
@@ -37,7 +37,7 @@ renter:
 
 	{
 
-		printf("Error: Password shouldn't exceed 12 characters ");
+		printf("\nError: Password shouldn't exceed 12 characters ");
 
 	}
 
@@ -71,7 +71,7 @@ renter:
 
 	if (up == 0)
 	{
-		printf("There must be at least one Uppercase\n"); 
+		printf("\nThere must be at least one Uppercase\n"); 
 
 
 			goto renter; 
@@ -79,18 +79,18 @@ renter:
 
 	if (low == 0)
 	{
-		printf("There must be at least one Lowercase\n"); 
+		printf("\nThere must be at least one Lowercase\n"); 
 		goto renter; 
 		
 	}
      if (digi == 0)
 	{
-		printf("There must be at least one Digit\n"); 
+		printf("\nThere must be at least one Digit\n"); 
 		goto renter; 
 	 }
 	 if (schar == 0)
 	{ 
-		printf("There must be at least one Special Character\n"); 
+		printf("\nThere must be at least one Special Character\n"); 
 		goto renter; 
 	}
 	else
