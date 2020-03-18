@@ -78,11 +78,11 @@ void main()
 	{
 		printf("There must be at least one Lowercase\n"); 
 		goto a; }
-	else if (digi == 0)
+	 if (digi == 0)
 	{
 		printf("There must be at least one Digit\n"); 
 		goto a; }
-	else if (schar == 0)
+	 if (schar == 0)
 	{ 
 		printf("There must be at least one Special Character\n"); 
 		goto a; }
