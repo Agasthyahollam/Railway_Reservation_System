@@ -15,8 +15,8 @@ void main()
 	printf("Enter your Name: ");
 
 	gets(name);
-
-	printf("Hello %s, Enter your password:\n", name);
+	a:
+ printf("Hello %s, Enter your password:\n", name);
 
 	gets(pwd);
 
@@ -67,39 +67,44 @@ void main()
 	}
 
 	if (up == 0)
+	{
+		printf("There must be at least one Uppercase\n"); {
 
-		printf("There must be at least one Uppercase\n");
+
+			goto a; }
+	}
 
 	if (low == 0)
-
-		printf("There must be at least one Lowercase\n");
-
-	if (digi == 0)
-
-		printf("There must be at least one Digit\n");
-
-	if (schar == 0)
-
-		printf("There must be at least one Special Character\n");
-
-	else
-
 	{
-
+		printf("There must be at least one Lowercase\n"); 
+		goto a; }
+	else if (digi == 0)
+	{
+		printf("There must be at least one Digit\n"); 
+		goto a; }
+	else if (schar == 0)
+	{ 
+		printf("There must be at least one Special Character\n"); 
+		goto a; }
+	else
+    { 
 		printf("Confirm your Password\n");
 
 		gets(ver);
 
-		if (strcmp(pwd, ver) == 0)
+		if (strcmp(pwd, ver) == 0) 
+		{
 
 			printf("Welcome %s, your is Password Verified", name);
-
-		else
+		}
+		else 
+		{
 
 			printf("Password did not match");
-
+			
+		}
 	}
 
 	getch();
-
+	
 }
