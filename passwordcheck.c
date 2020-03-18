@@ -1,5 +1,3 @@
-//C Program to Validate Password
-
 #include<stdio.h>
 
 #include<string.h>
@@ -10,12 +8,17 @@ void main()
 
 	char name[25], pwd[25], ver[25];
 
-	int i, a, digi = 0, up = 0, low = 0, schar = 0;
+	int i, a, digi , up , low , schar ;
 
 	printf("Enter your Name: ");
 
 	gets(name);
-	a:
+renter:
+	digi = 0; 
+	up = 0; 
+	low = 0; 
+	schar = 0;
+
  printf("Hello %s, Enter your password:\n", name);
 
 	gets(pwd);
@@ -68,26 +71,30 @@ void main()
 
 	if (up == 0)
 	{
-		printf("There must be at least one Uppercase\n"); {
+		printf("There must be at least one Uppercase\n"); 
 
 
-			goto a; }
+			goto renter; 
 	}
 
 	if (low == 0)
 	{
 		printf("There must be at least one Lowercase\n"); 
-		goto a; }
-	 if (digi == 0)
+		goto renter; 
+		
+	}
+     if (digi == 0)
 	{
 		printf("There must be at least one Digit\n"); 
-		goto a; }
+		goto renter; 
+	 }
 	 if (schar == 0)
 	{ 
 		printf("There must be at least one Special Character\n"); 
-		goto a; }
+		goto renter; 
+	}
 	else
-    { 
+    {  renter1:
 		printf("Confirm your Password\n");
 
 		gets(ver);
@@ -100,11 +107,9 @@ void main()
 		else 
 		{
 
-			printf("Password did not match");
-			
+			printf("Password did not match\n");
+			goto renter1;
 		}
 	}
 
-	getch();
-	
-}
+	getch(); }
