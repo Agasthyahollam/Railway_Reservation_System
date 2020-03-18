@@ -1,0 +1,9 @@
+typedef struct{
+	char name[50];
+	int train_num;
+	int num_of_seats;
+  char ver[20];
+  char pwd[20];
+  char usn[100];
+  
+}
