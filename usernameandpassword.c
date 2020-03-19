@@ -138,7 +138,7 @@ int i, a, digi, up, low, schar, s;
 		}
 		check[i] = "\0";
 		s =strcmp(check, com);
-		//printf("%d", s);
+		//printf("%d", s);value of s depends on compiler and needs to be changed accordingly in the if condition for correct output therefore this line is commented and will be used while chwecking value of s pls dont delete boys
 		if (s == -1 && schar == 1 && up==0)
 
 		{
