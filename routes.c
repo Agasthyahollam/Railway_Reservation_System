@@ -6,7 +6,7 @@ char route_1[5][20]={"Ranchi","Bokaro","Dhanbad","Durgapur","Kolkata"},origin_st
 int destination_ctr=0;
 int origin_ctr=0;
 char route_1_train[]="Shatabdi Express(12020)";
-repeat:
+repeat2:
 printf("Enter Origin");
 scanf("%s",origin_station);
 printf("Enter Destination");
@@ -25,12 +25,12 @@ destination_ctr=1;
 if (origin_ctr==0)
 {
 printf("invalid origin station");
-goto repeat;
+goto repeat2;
 }
 if (destination_ctr==0)
 {
 printf("invalid destination station");
-goto repeat;
+goto repeat2;
 }
 printf("The ticket is from%s to %s",origin_station,destination);
 }
