@@ -5,5 +5,8 @@ typedef struct{
   char ver[20];
   char pwd[20];
   char usn[100];
-  
+char route_1[5][20]={"Ranchi","Bokaro","Dhanbad","Durgapur","Kolkata"},origin_station[20],destination[20];
+int destination_ctr=0;
+int origin_ctr=0;
+char route_1_train[]="Shatabdi Express(12020)";  
 }
