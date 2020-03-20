@@ -1,4 +1,4 @@
-#include<stdio.h>
+=#include<stdio.h>
 #include<string.h>
 /*make array of different departure times,arrival time,cost in 2ac,3ac,sleeper in different routes
 for different costs take the index number of origin and destination in that route and multiply it with a constant value like rs.150*/
@@ -147,35 +147,35 @@ for(r1c=r1+1;r1c<4;r1c++)  //route 1
 if((r1_ctr==1)&&(strcmp(destination,route_1[r1c])==0))    
 {
 diff_r1=r1c-r1;
-printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d AC 3 tier ₹%d AC 2 tier ₹%d\n",route_1_train,origin_station,arr_r1[r1],dep_r1[r1],destination,arr_r1[r1c],diff_r1*150,diff_r1*350,diff_r1*450);
+printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d\n AC 3 tier ₹%d\n AC 2 tier ₹%d\n",route_1_train,origin_station,arr_r1[r1],dep_r1[r1],destination,arr_r1[r1c],diff_r1*150,diff_r1*350,diff_r1*450);
 }}
 for(r2c=r2+1;r2c<4;r2c++)  //route 2
 {
 if((r2_ctr==1)&&(strcmp(destination,route_2[r2c])==0))    
 {
 diff_r2=r2c-r2;
-printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d AC 3 tier ₹%d AC 2 tier ₹%d\n",route_2_train,origin_station,arr_r2[r2],dep_r2[r2],destination,arr_r2[r2c],diff_r2*200,diff_r2*400,diff_r2*500);
+printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d\n AC 3 tier ₹%d\n AC 2 tier ₹%d\n",route_2_train,origin_station,arr_r2[r2],dep_r2[r2],destination,arr_r2[r2c],diff_r2*200,diff_r2*400,diff_r2*500);
 }}
 for(r3c=r3+1;r3c<4;r3c++)  //route 3
 {
 if((r3_ctr==1)&&(strcmp(destination,route_3[r3c])==0))    
 {
 diff_r3=r3c-r3;
-printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d AC 3 tier ₹%d AC 2 tier ₹%d\n",route_3_train,origin_station,arr_r3[r3],dep_r3[r3],destination,arr_r3[r3c],diff_r3*175,diff_r3*375,diff_r3*575);
+printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d\n AC 3 tier ₹%d\n AC 2 tier ₹%d\n",route_3_train,origin_station,arr_r3[r3],dep_r3[r3],destination,arr_r3[r3c],diff_r3*175,diff_r3*375,diff_r3*575);
 }}
 for(r4c=r4+1;r4c<5;r4c++)  //route 4
 {
 if((r4_ctr==1)&&(strcmp(destination,route_4[r4c])==0))    
 {
 diff_r4=r4c-r4;
-printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d AC 3 tier ₹%d AC 2 tier ₹%d\n",route_4_train,origin_station,arr_r4[r4],dep_r4[r4],destination,arr_r4[r4c],diff_r4*250,diff_r4*450,diff_r4*700);
+printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d\n AC 3 tier ₹%d\n AC 2 tier ₹%d\n",route_4_train,origin_station,arr_r4[r4],dep_r4[r4],destination,arr_r4[r4c],diff_r4*250,diff_r4*450,diff_r4*700);
 }}
 for(r5c=r5+1;r5c<5;r5c++)  //route 5
 {
 if((r5_ctr==1)&&(strcmp(destination,route_5[r5c])==0))    
 {
 diff_r5=r5c-r5;
-printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d AC 3 tier ₹%d AC 2 tier ₹%d\n",route_5_train,origin_station,arr_r5[r5],dep_r5[r5],destination,arr_r5[r5c],diff_r5*260,diff_r5*500,diff_r5*650);
+printf("Train Name: %s\n%s Arrival: %s Departure: %s \n%s Arrival: %s\nFare: sleeper ₹%d\n AC 3 tier ₹%d\n AC 2 tier ₹%d\n",route_5_train,origin_station,arr_r5[r5],dep_r5[r5],destination,arr_r5[r5c],diff_r5*260,diff_r5*500,diff_r5*650);
 }}
 
 }
