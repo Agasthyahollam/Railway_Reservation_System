@@ -1,4 +1,4 @@
-=#include<stdio.h>
+#include<stdio.h>
 #include<string.h>
 /*make array of different departure times,arrival time,cost in 2ac,3ac,sleeper in different routes
 for different costs take the index number of origin and destination in that route and multiply it with a constant value like rs.150*/
