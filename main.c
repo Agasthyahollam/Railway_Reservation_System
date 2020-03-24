@@ -8,15 +8,37 @@ int passangers(int x)
     scanf("%d",&x);
     return x;
 
-}
-char tier(char x)
+}int  tier()
 {
-    printf("enter the class you want to travel = \n ");
-    scanf("%s",&x);
-    printf("The class you choose = %s",&x);
-    return x;
-
-
+    char s[20] = "Sleeper";
+    char s1[20] = "AC2"; char s2[20] = "AC3";
+    int x=7;
+    int i = 0;
+    return5:
+    printf("The Available Calsses are\n 1:Sleeper\n 2:AC2\n 3:AC3");
+    
+    printf("\nenter the class you want to travel = \n ");
+    scanf_s("%d",&x);
+    if (x == 1 )
+    {
+        printf("The class you choose =%s",s);
+        return x;
+    }
+    else if( x == 2 )
+    {
+        printf("The class you choose =%s", s1);
+        return x;
+    }
+    else if (x == 3)
+    {
+        printf("The class you choose =%s", s2);
+        return x;
+    }
+    else
+    {
+        printf("tier not available");
+        goto return5;
+    }
 }
 int trainno(int x)
 {
