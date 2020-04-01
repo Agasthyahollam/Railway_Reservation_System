@@ -337,15 +337,6 @@ repeat:
         }
 
     }
-
-
-
-
-
-
-
-
-    //scanf_s("%d", &trainno1);
     int rno = train();
 
     int pass1 = passangers();
