@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-char p = '%', r = '₹'; int *ptr;
+char p = '%', r = '₹';
 int pass1;
 int rno;
 int tier1;
@@ -18,8 +18,8 @@ int diff_r2;
 int diff_r3;
 int diff_r4;
 int diff_r5;
-int AC2=0, S=0, AC3=0;
-int AC2P=0, SP=0, AC3P=0;
+int AC2 = 0, S = 0, AC3 = 0;
+int AC2P = 0, SP = 0, AC3P = 0;
 char arr_r1[4][20] = { "start","01:50","02:15","07:50" };
 char arr_r2[4][20] = { "start","16:09","20:35","22:05" };
 char arr_r3[4][20] = { "start","20:08","01:45","04:20" };
@@ -53,13 +53,13 @@ float Billing()// billing function inputs are coming from tier function and trai
     float Service = (AC3P * 15 + AC2P * 30);
     float Total = Total_Bill + GST + Service;
     printf("************************INVOICE************************\n");
-    printf("Cost Breakdown\n Sleeper=%d*%d\n AC2=%d*%d\n AC3=%d*%d\n ",S,SP,AC2P,AC2,AC3P,AC3);
+    printf("Cost Breakdown\n Sleeper=%d*%d\n AC2=%d*%d\n AC3=%d*%d\n ", S, SP, AC2P, AC2, AC3P, AC3);
     printf("Bill Amount=₹%.2f\n", Total_Bill);
     printf("GST=₹%.2f\n", GST);
     printf("Service Charges=₹%.2f\n", Service);
-    printf("*GST of 5 %c Apllicable on Total Amount\n*in case of AC2 or AC3 Booking Additional service charge of ₹30 and ₹15 is applied \n ",p );
+    printf("*GST of 5 %c Apllicable on Total Amount\n*in case of AC2 or AC3 Booking Additional service charge of ₹30 and ₹15 is applied \n ", p);
 
-    printf("TOTAL =%.2f\n",Total );
+    printf("TOTAL =%.2f\n", Total);
     return Total;
 }
 
@@ -69,10 +69,10 @@ int train()
 {
     int trainno1;
 return8:
-    printf("enter the train number in which you wish to travel  = ");
+    printf("\nenter the train number in which you wish to travel  =\n ");
     scanf("%d", &trainno1);
 
-    
+
     if (trainno1 == r1num)
     {
         printf("train name = Humsafar Express \n");
@@ -100,9 +100,9 @@ return8:
     }
     else
     {
-        printf("invalid Train No pls enter again");
+        printf("\ninvalid Train No pls enter again");
         goto return8;
-        
+
 
     }
 
@@ -112,8 +112,8 @@ int passangers()
 {
     int x;
 renter6:
-    printf("Enter the number of passengers travelling\nMaximum no of seats which can be booked per account is 10\n");
-    
+    printf("\nEnter the number of passengers travelling\nMaximum no of seats which can be booked per account is 10\n");
+
     scanf("%d", &x);
     if (x > 10)
     {
@@ -121,27 +121,27 @@ renter6:
         goto renter6;
     }
     else
-    return x;
+        return x;
 
 }
 int  tier()//when u choose the tier acc no of seats gets added (can be used for seat count)
 {
     char s[20] = "Sleeper";
     char s1[20] = "AC2"; char s2[20] = "AC3";
-    int x=7;
+    int x = 7;
     int i = 0;
-    return5:
+return5:
     printf("The Available Calsses are\n 1:Sleeper\n 2:AC2\n 3:AC3");
-    
+
     printf("\nenter the class you want to travel = \n ");
-    scanf("%d",&x);
-    if (x == 1 )
+    scanf("%d", &x);
+    if (x == 1)
     {
-        printf("The class you choose =%s\n",s);
+        printf("The class you choose =%s\n", s);
         SP++;//no of seats booked in Sleeper
         return x;
     }
-    else if( x == 2 )
+    else if (x == 2)
     {
         printf("The class you choose =%s\n", s1);
         AC2P++;// no of seats booked in AC2
@@ -155,7 +155,7 @@ int  tier()//when u choose the tier acc no of seats gets added (can be used for 
     }
     else
     {
-        printf("tier not available");
+        printf("tier not available\n");
         goto return5;
     }
 }
@@ -181,7 +181,7 @@ void main()
     printf("\n");
 repeat:
     printf("Enter Origin\n");
-    scanf("%s",origin_station);
+    scanf("%s", origin_station);
     for (int i = 0; i < 14; i++)
     {
         if (strcmp(origin_station, stations[i]) == 0)
@@ -272,8 +272,8 @@ repeat:
         printf("\n");
     }
     printf("Enter Destination\n");
-    scanf("%s",destination);
-    system("cls");
+    scanf("%s", destination);
+    system("clear");
     for (r1c = r1 + 1; r1c < 4; r1c++)  //route 1
     {
         if ((r1_ctr == 1) && (strcmp(destination, route_1[r1c]) == 0))
@@ -347,20 +347,20 @@ repeat:
 
     //scanf_s("%d", &trainno1);
     int rno = train();
-    
+
     int pass1 = passangers();
 
     int seat;
 
-    
+
     printf("selected number of passsengers = %d \n", pass1);
     for (int i = 0; i < pass1; i++)
     {
-        
+
         int tier1 = tier();
     }
-    system("cls");
+    system("clear");
     float bill = Billing();
-    
+
 
 }
