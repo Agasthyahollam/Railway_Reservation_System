@@ -11,7 +11,7 @@ int diff_r5=0;
 int seat_num;
 int seat[3]={100,100,100};
 
-int fare[5][3]={{150,350,450},{200,400,500},{175,375,575},{250,450,700},{260,500,650}};
+int fare[5][3]={{150,350,450},{200,400,500},{175,375,575},{250,450,700},{260,500,650}};//making array of 5 routes with base price for the 3 classes. 
 
 char class_choice[5];
 char class[3][5]={"SL","AC2","AC3"};
