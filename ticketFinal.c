@@ -473,7 +473,7 @@ for(int j=0;j<seat_num;j++)
 fprintf(fptr1,"%s\n",&passenger[j][20]);//this makes it warning free in my system if it shows errors pls change(remove &)
 
 }
-fprintf(fptr1,"Total Cost(Inclsive Of GST) =%f\t\t\t\t\t",total);
+fprintf(fptr1,"Total Cost(Inclsive Of GST) =%f\t\t\t\t",total);
 fprintf(fptr1,"Payment Mode:%s\n",choice1);
 
 	
