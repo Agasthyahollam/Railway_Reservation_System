@@ -344,8 +344,10 @@ char ph[20];
 printf("The amount to be paid is:%f\n",total);
 return17:
 printf("Choose ur prefered Payment Mode\n");
+	
 
 printf("1.Paytm\n 2.Debit Card \n 3.Credit Card\n");
+printf("enter the Sl.no to Choose"\n);
 scanf("%d",&choice);
 if (choice ==1)
 {strcpy(choice1,pay[0]);
