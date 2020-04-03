@@ -18,7 +18,7 @@ int diff_r4=0;
 int diff_r5=0;
 int total_fare;
 float total;
-char name[12];
+char name[100];
 int seat[5][3];
 char trname[40];
 char arr_origin[10];
