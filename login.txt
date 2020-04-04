@@ -1,3 +1,4 @@
-Agasthya,agasthyaholla.m@gmail.com,Agasthya@123,9845090704;
-Shourya,sh@gmail.com,shr123@S,9632691319;
-Shreeporna,shree@gmail.com,Shree@123,789936651;
+agasthyaholla.m@gmail.com,Agasthya@123;
+shourya@gmail.com,Shourya@123;
+shreepoorna@gmail.com,Shree@123;
+sammy@gmail.com,Sam@123;
