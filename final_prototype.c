@@ -96,7 +96,7 @@ printf("Enter Customer Name\n");                              //to be replaced w
 scanf("%s",name);
 system("clear");
 
-available_tickets();
+
 
 int destination_ctr=0;
 int origin_ctr=0;
@@ -227,6 +227,7 @@ FILE * fptr2;
     fclose (fptr2);
 passname(seat_num);
 pnr_no=ticket();
+	available_tickets();
  create_marks_csv();
  create();
 }
