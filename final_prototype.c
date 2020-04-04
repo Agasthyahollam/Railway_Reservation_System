@@ -464,7 +464,6 @@ for (c = getc(fptr7); c != EOF; c = getc(fptr7))
         if (c == '\n') // Increment count if this character is newline 
             count = count + 1; 	
     fclose (fptr7);
-printf("count %d ",count);
 FILE * fptr8;
   fptr8 = fopen ("booking.txt", "r");  
 for(int i=0;i<4*count;i++)
@@ -475,12 +474,10 @@ if(strcmp(pnr_can,pnr)==0)
 fscanf(fptr8,"%d ",&seat_num);
 fscanf(fptr8,"%s ",trno);
 fscanf(fptr8,"%s ",tier);
+break;
 }
 }
     fclose (fptr8);
-printf("seat no %d ",seat_num);
-printf("trno %s ",trno);
-printf("tier %s ",tier);
 for(int i=0;i<5;i++)
 {
 if(strcmp(r_no[i],trno)==0)
