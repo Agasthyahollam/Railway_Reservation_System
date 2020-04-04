@@ -691,6 +691,6 @@ void create1()
 FILE *fp2;
 fp2=fopen("login.txt","a");
 fprintf(fp2,"\n");
-fprintf(fp2,"%s,%s%c",usn,pwd,c);
+fprintf(fp2,"%s,%s%c",usn,pwd,c); //change this to use access_email_pass.c
 fclose(fp2);
 }
