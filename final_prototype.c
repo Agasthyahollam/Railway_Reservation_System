@@ -60,22 +60,43 @@ char c=';';
 void main()
 
 {int a;
+ret:
 printf("press 1 for booking\n press 2 for registration\n");
 printf("enter your choice\n");
 scanf("%d",&a);
 
 if (a==1)
 {
-printf("booking\n");
-booking();
+printf("login\n");
+login();
 }
-else if (a==2)
+if (a==2)
 {
 printf("register\n");
 register1();
 }
+if (a==3)
+{
+printf("Display\n");
+available_tickets();
+}
+if (a==4)
+{
+printf("Booking\n);
+booking();
+}
+if (a==5)
+{
+printf("Cancellation\n");
+cancellation();
+}
+
 else
-printf("wrong choice");
+{
+printf("wrong choice\n");
+printf("enter option again\n");
+goto ret;
+}
 }
 void booking()
 {
@@ -227,7 +248,7 @@ FILE * fptr2;
     fclose (fptr2);
 passname(seat_num);
 pnr_no=ticket();
-	available_tickets();
+	
  create_marks_csv();
  create();
 }
