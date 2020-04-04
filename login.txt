@@ -1,4 +1,4 @@
-agasthyaholla.m@gmail.com,Agasthya@123;
-shourya@gmail.com,Shourya@123;
-shreepoorna@gmail.com,Shree@123;
-sammy@gmail.com,Sam@123;
+agasthyaholla.m@gmail.com Agasthya@123
+shourya@gmail.com Shourya@123
+shreepoorna@gmail.com Shree@123
+sammy@gmail.com Sam@123 
