@@ -13,7 +13,18 @@ void available_tickets();
 void create_marks_csv();
 void create();
 void cancellation();
-
+void login1();
+void login();
+static int cu=10;
+int ch;
+ char email[10][100];
+char password[10][100];
+char usn[100];
+char pwd[100];
+int z=0;
+int k=0;
+int s,p;
+int co=0;
 int seat_num;
 char passenger[20][20];
 char origin_station[20],destination[20];
@@ -85,6 +96,10 @@ else if(a==4)
 {
 printf("View Available Seats in ALL trains\n");
 available_tickets();
+}
+else if (a==5)
+{printf("login code\n");
+	login();
 }
 else
 printf("wrong choice");
@@ -669,7 +684,7 @@ return4:
 		printf("\nInvalid phone number\n");
 		goto return4;
 	}
-//char a[9][3][100]={{name,usn,pwd,phno}};
+
 create_marks_csv1();
 create1();
 }
@@ -680,7 +695,7 @@ void create_marks_csv1()
 {
 FILE *fp;
 int i,j;
-fp=fopen("login.csv","a");
+fp=fopen("login1.csv","a");
 fprintf(fp,"\n");
 fprintf(fp,"%s,%s,%s,%s",name,usn,pwd,phno);
 fclose(fp);
@@ -689,8 +704,90 @@ fclose(fp);
 void create1()
 {
 FILE *fp2;
-fp2=fopen("login.txt","a");
+fp2=fopen("login1.txt","a");
 fprintf(fp2,"\n");
-fprintf(fp2,"%s,%s%c",usn,pwd,c); //change this to use access_email_pass.c
+fprintf(fp2,"%s %s",usn,pwd,c); //change this to use access_email_pass.c
 fclose(fp2);
 }
+void fileline(){
+FILE *fptr;
+  fptr = fopen ("login1.txt", "r");
+    if (fptr == NULL)
+{
+        printf("Error Reading File\n");
+        exit (0);
+}
+
+for(char j=getc(fptr); j!=EOF;j=getc(fptr))
+{
+if (j =='\n')
+co++;
+}	
+}
+
+int login1()
+{
+printf("Enter Username\n");
+scanf("%s",usn);
+for (int i=0;i<c;i++)
+{
+s=strcmp(usn,email[i]);
+if (s==0)
+break;
+}
+
+printf("Enter Password\n");
+scanf("%s",pwd);
+for (int j=0;j<c;j++)
+{
+p=strcmp(pwd,password[j]);
+if (p==0)
+break;
+}
+if (s==0 && p==0)
+{
+printf("Login Complete\n");
+return 1;
+}
+else if (s==0 && p!=0|| s!=0 && p==0)
+{printf("either Username or Password is Incorrect");
+return 0;
+}
+else
+{
+printf("Invalid Login Credentials Pls Register\n");
+//register1();
+return 2;
+}
+}
+void login()
+{
+FILE *fptr;
+  fptr = fopen ("login1.txt", "r");
+    if (fptr == NULL)
+{
+        printf("Error Reading File\n");
+        exit (0);
+}
+for(int i=0;i<(2*cu);i++)
+{
+if(i%2==0)
+{
+fscanf(fptr,"%s ",email[k]);
+k++;
+}
+else
+{fscanf(fptr,"%s ",password[z]);
+z++;}
+}
+fclose (fptr);
+
+k=login1();
+if (k==1)
+{printf("Sucessfully Logged IN");
+//choice();
+}
+else 
+{
+printf("Login Incmoplete\n");
+}}
