@@ -643,7 +643,7 @@ void create()
 {
 FILE *fp5;
 fp5=fopen("booking.txt","a");
-fprintf(fp5,"\n");
+//fprintf(fp5,"\n");
 fprintf(fp5,"%ld %d %s %s",pnr_no,seat_num,r_no_choice,class_choice);
 fclose(fp5);
 }
